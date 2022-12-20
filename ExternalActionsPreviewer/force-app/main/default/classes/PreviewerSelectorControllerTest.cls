@@ -4,12 +4,17 @@ public with sharing class PreviewerSelectorControllerTest {
     static void testFetchExternalActionDetails() {
         // Arrange
         Id marketingAppExtActionId = '2Yo000000000000';
+        Boolean exceptionOccurred = false;
 
         // Act
-        MarketingAppExtAction maea = PreviewerSelectorController.fetchExternalActionDetails(marketingAppExtActionId);
+        try {
+	        MarketingAppExtAction maea = PreviewerSelectorController.fetchExternalActionDetails(marketingAppExtActionId);            
+        } catch (Exception e) {
+            exceptionOccurred = true;
+        }
 
         // Assert
-        System.assertEquals(maea, null);
+        System.assert(exceptionOccurred);
     }
 
     @isTest
