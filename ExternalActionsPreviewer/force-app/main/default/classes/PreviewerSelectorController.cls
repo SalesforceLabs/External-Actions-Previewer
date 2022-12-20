@@ -1,4 +1,4 @@
-public class PreviewerSelectorController {
+public with sharing class PreviewerSelectorController {
     public PreviewerSelectorController() {}
 
     @AuraEnabled(cacheable=true)
@@ -10,7 +10,8 @@ public class PreviewerSelectorController {
     @AuraEnabled(cacheable=true)
     public static List<MarketingAppExtAction> fetchExternalActionsByName(String queryTerm) {
         List<MarketingAppExtAction> externalActions = new List<MarketingAppExtAction>();
-        for (MarketingAppExtAction maea : [SELECT Id, ActionName, ActionSelector, IsActive, MarketingAppExtension.MasterLabel FROM MarketingAppExtAction WHERE ActionName LIKE :('%' + queryTerm + '%') WITH SECURITY_ENFORCED ORDER BY ActionName LIMIT 5]) {
+        String actionName = '%' + queryTerm + '%';
+        for (MarketingAppExtAction maea : [SELECT Id, ActionName, ActionSelector, IsActive, MarketingAppExtension.MasterLabel FROM MarketingAppExtAction WHERE ActionName LIKE :actionName WITH SECURITY_ENFORCED ORDER BY ActionName LIMIT 5]) {
             externalActions.add(maea);
         }
         return externalActions;
