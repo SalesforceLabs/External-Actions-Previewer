@@ -1,4 +1,4 @@
-global class PreviewerTesterControllerMock implements HttpCalloutMock {
+global class PreviewerEditorControllerMock implements HttpCalloutMock {
     global HttpResponse respond(HttpRequest req) {
         if (req.getEndpoint().contains('exception')) {
             throw new MockException('Threw Exception!');

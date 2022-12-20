@@ -1,12 +1,22 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true
+        },
+        {
+            "path": "ExternalActionsPreviewer",
+            "package": "External Actions Previewer App",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
+        }
+    ],
+    "name": "ExternalActionsPreviewer",
+    "namespace": "pi_ea_utils",
+    "sfdcLoginUrl": "https://accountengagement-dev-ed.develop.lightning.force.com/",
+    "sourceApiVersion": "56.0",
+    "packageAliases": {
+        "External Actions Previewer App": "0HoDo000000blqQKAQ"
     }
-  ],
-  "name": "ExternalActionsPreviewer",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "56.0"
 }

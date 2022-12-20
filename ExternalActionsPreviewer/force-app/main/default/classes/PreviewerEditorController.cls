@@ -1,14 +1,24 @@
 public with sharing class PreviewerEditorController {
-    public PreviewerEditorController() {}
-
     @AuraEnabled(cacheable=false)
     public static String saveExternalActionActionSchema(Id marketingAppExtActionId, String actionSchema) {
-        HttpRequest req = new HttpRequest();
         Http h = new Http();
+        HttpRequest req = createHttpRequest(marketingAppExtActionId, actionSchema);
+        String returnMessage;
+
+        try {
+            HttpResponse res = h.send(req);
+            returnMessage = res.getBody();
+        } catch (Exception e) {
+            returnMessage = e.getMessage();
+        }
+        return returnMessage;
+    }
+
+    private static HttpRequest createHttpRequest(Id marketingAppExtActionId, String actionSchema) {
+        HttpRequest req = new HttpRequest();
         String baseUrl = 'callout:ExternalActionsPreviewerNC';
         String endpoint = baseUrl + '/tooling/sobjects/MarketingAppExtAction/' + marketingAppExtActionId;
         String body = '{"ActionSchema":' + actionSchema + '}';
-        System.debug('========== body: ' + body);
 
         req.setHeader('Authorization', 'Bearer ' + UserInfo.getSessionID());
         req.setHeader('Content-Type', 'application/json');
@@ -16,8 +26,6 @@ public with sharing class PreviewerEditorController {
         req.setBody(body);
         req.setMethod('PATCH');
 
-        HttpResponse res = h.send(req);
-        System.debug('========== res.getBody(): ' + res.getBody());
-        return res.getBody();
+        return req;
     }
 }
