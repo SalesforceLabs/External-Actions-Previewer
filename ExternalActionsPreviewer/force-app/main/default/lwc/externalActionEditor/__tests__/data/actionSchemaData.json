@@ -1,0 +1,18 @@
+{
+  "properties": {
+    "ids": {
+      "type": "string",
+      "title": "ids",
+      "value": ""
+    }
+  },
+  "view": {
+    "components": [
+      {
+        "definition": "lightning/control",
+        "scope": "#/properties/ids"
+      }
+    ]
+  },
+  "required": []
+}

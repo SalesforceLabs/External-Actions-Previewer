@@ -1,0 +1,11 @@
+:host {
+  --slds-c-textarea-sizing-min-height: 300px;
+}
+:host > lightning-card {
+  --slds-c-card-header-spacing-inline-end: 0rem;
+  --slds-c-card-header-spacing-inline-start: 0rem;
+}
+:host lightning-textarea {
+  font-family: monospace;
+  font-size: 1.2em;
+}

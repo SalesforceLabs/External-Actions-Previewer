@@ -1,0 +1,6 @@
+{
+  "actionSchema": "{\n  \"properties\": {\n    \"ids\": {\n      \"type\": \"string\",\n      \"title\": \"ids\",\n      \"value\": \"\"\n    }\n  },\n  \"view\": {\n    \"components\": [\n      {\n        \"definition\": \"lightning/control\",\n        \"scope\": \"#/properties/ids\"\n      }\n    ]\n  },\n  \"required\": []\n}",
+  "actionSelector": "pi_ea_utils__AccountQueryAction",
+  "actionParams": "{\n  \"isStandard\": false,\n  \"type\": \"apex\"\n}",
+  "actionName": "Custom Ext Action"
+}

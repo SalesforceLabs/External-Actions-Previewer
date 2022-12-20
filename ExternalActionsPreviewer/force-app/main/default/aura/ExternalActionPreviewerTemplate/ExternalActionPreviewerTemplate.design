@@ -1,0 +1,10 @@
+<design:component label="Two Custom Regions Template">
+    <flexipage:template>
+        <flexipage:region name="left" label="Left Region" defaultWidth="Medium" />
+        <flexipage:region name="right" label="Right Region" defaultWidth="Small" />
+    </flexipage:template>
+    <design:supportedFormFactors>
+        <design:supportedFormFactor type="Small" />
+        <design:supportedFormFactor type="Large" />
+    </design:supportedFormFactors>
+</design:component>

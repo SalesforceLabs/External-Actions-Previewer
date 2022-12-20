@@ -1,0 +1,8 @@
+:host {
+  --slds-c-card-header-spacing-inline-start: 0px;
+  --slds-c-card-header-spacing-inline-end: 0px;
+}
+:host section {
+  border-radius: 0%;
+  margin-left: 1rem;
+}
