@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "2YoDn00000000R5KAI",
+    "ActionName": "Custom Ext Action",
+    "MarketingAppExtension": {
+      "MasterLabel": "Custom Extension",
+      "Id": "0mFDn00000000ESMAY"
+    }
+  },
+  {
+    "Id": "2YoDn00000000R5KAJ",
+    "ActionName": "Nutter Ext Action",
+    "MarketingAppExtension": {
+      "MasterLabel": "Custom Extension",
+      "Id": "0mFDn00000000ESMAY"
+    }
+  },
+  {
+    "Id": "2YoDn00000000R5KAK",
+    "ActionName": "Yet Nutter Ext Action",
+    "MarketingAppExtension": {
+      "MasterLabel": "Custom Extension",
+      "Id": "0mFDn00000000ESMAY"
+    }
+  }
+]

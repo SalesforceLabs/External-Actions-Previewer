@@ -1,0 +1,6 @@
+.THIS > div.slds-card__header.slds-grid {
+  display: none;
+}
+.THIS > div.slds-card__body {
+  margin-top: 0px;
+}

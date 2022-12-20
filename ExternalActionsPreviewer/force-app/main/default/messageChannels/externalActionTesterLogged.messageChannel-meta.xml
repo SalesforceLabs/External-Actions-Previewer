@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Action Schema logging message channel</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description
+    >This shows results from External Action testing</description>
+        <fieldName>logMessage</fieldName>
+    </lightningMessageFields>
+    <masterLabel>externalActionTesterLogged</masterLabel>
+</LightningMessageChannel>

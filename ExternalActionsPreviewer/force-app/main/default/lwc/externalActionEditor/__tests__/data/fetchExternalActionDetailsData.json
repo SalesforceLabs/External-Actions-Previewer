@@ -1,0 +1,13 @@
+{
+  "Id": "2YoDn00000000R5KAI",
+  "ActionName": "Custom Ext Action",
+  "ActionSelector": "pi_ea_utils__AccountQueryAction",
+  "ActionParams": "{\n  \"isStandard\": false,\n  \"type\": \"apex\"\n}",
+  "MarketingAppExtensionId": "0mFDn00000000ESMAY",
+  "ActionSchema": "{\n  \"properties\": {\n    \"ids\": {\n      \"type\": \"string\",\n      \"title\": \"ids\",\n      \"value\": \"\"\n    }\n  },\n  \"view\": {\n    \"components\": [\n      {\n        \"definition\": \"lightning/control\",\n        \"scope\": \"#/properties/ids\"\n      }\n    ]\n  },\n  \"required\": []\n}",
+  "IsActive": false,
+  "MarketingAppExtension": {
+    "MasterLabel": "Custom Extension",
+    "Id": "0mFDn00000000ESMAY"
+  }
+}

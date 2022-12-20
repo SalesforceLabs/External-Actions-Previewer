@@ -1,0 +1,101 @@
+<template>
+  <lightning-card title="Preview" icon-name="utility:preview">
+    <lightning-button
+      icon-name="utility:share_file"
+      slot="actions"
+      label="Test"
+      variant="brand"
+      onclick={handleTestButton}
+      disabled={showIllustrationImage}
+    >
+    </lightning-button>
+    <div
+      class="slds-p-left_medium slds-grid slds-size_1-of-1"
+      style="position: relative"
+    >
+      <lightning-card
+        class="external-action-tester-container slds-card_boundary slds-box slds-theme_shade"
+      >
+        <section>
+          <lightning-card
+            class="slds-card_boundary slds-align_absolute-center slds-theme_default external-action-tester"
+            style="width: 350px"
+          >
+            <div class="external-action-tester-title" slot="title">
+              {actionName}
+            </div>
+            <lightning-icon
+              class="external-action-tester-icon"
+              icon-name={iconName}
+              size="large"
+            >
+            </lightning-icon>
+            <div
+              if:true={actionSchemaView.length}
+              class="external-action-tester-body"
+            >
+              <template for:each={actionSchemaView} for:item="input">
+                <lightning-input
+                  key={input.key}
+                  data-id={input.key}
+                  label={input.title}
+                  type={input.type}
+                  value={input.value}
+                  disabled={input.disabled}
+                  required={input.required}
+                >
+                </lightning-input>
+              </template>
+            </div>
+            <div
+              if:true={showIllustrationImage}
+              class="external-action-tester-body slds-illustration slds-illustration_small"
+            >
+              <c-external-action-illustration
+                if:true={actionSchemaEmpty}
+                type="desert"
+              >
+              </c-external-action-illustration>
+              <c-external-action-illustration
+                if:true={actionSchemaError}
+                type="walkthroughNotAvailable"
+              >
+              </c-external-action-illustration>
+              <c-external-action-illustration
+                if:true={actionSchemaViewInvalid}
+                type="pageNotAvailable"
+              >
+              </c-external-action-illustration>
+              <div if:true={actionSchemaError} class="slds-text-longform">
+                <h3 class="slds-text-heading_medium">Error previewing!</h3>
+                <p class="slds-text-body_regular">
+                  Please check your Action Schema JSON
+                </p>
+              </div>
+              <div if:true={actionSchemaEmpty} class="slds-text-longform">
+                <h3 class="slds-text-heading_medium">Nothing to show...</h3>
+                <p class="slds-text-body_regular">
+                  Please select an External Action
+                </p>
+              </div>
+              <div if:true={actionSchemaViewInvalid} class="slds-text-longform">
+                <h3 class="slds-text-heading_medium">Something's not right.</h3>
+                <p class="slds-text-body_regular">
+                  Not what you expected?&nbsp;
+                  <lightning-formatted-url
+                    value="https://developer.salesforce.com/docs/marketing/pardot/guide/external-actions-guide.html#considerations-for-external-actions"
+                    tooltip="Check your Action Schema"
+                    label="Check your Action Schema"
+                    target="_blank"
+                  >
+                  </lightning-formatted-url
+                  >!
+                </p>
+              </div>
+            </div>
+          </lightning-card>
+        </section>
+      </lightning-card>
+    </div>
+  </lightning-card>
+</template>

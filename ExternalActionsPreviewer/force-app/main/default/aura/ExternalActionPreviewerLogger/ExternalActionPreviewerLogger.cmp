@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+  <lightning:card variant="narrow" class="slds-p-around_medium">
+    <div>
+      <pi_ea_utils:externalActionLogger />
+    </div>
+  </lightning:card>
+</aura:component>

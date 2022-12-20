@@ -1,0 +1,50 @@
+:host > lightning-card {
+  --slds-c-card-header-spacing-inline-end: 0rem;
+  --slds-c-card-header-spacing-inline-start: 0rem;
+}
+:host lightning-card.external-action-tester-container {
+  --slds-c-card-header-spacing-inline-end: 0.75rem;
+  --slds-c-card-color-background: transparent;
+  width: 100%;
+  padding: 3rem 0;
+}
+:host lightning-card.external-action-tester {
+  --slds-c-card-header-spacing-block-start: 0rem;
+  --slds-c-card-header-spacing-inline-start: 0.75rem;
+  --slds-c-card-header-color-background: black;
+  --slds-c-card-radius-border: 0.75rem;
+  --slds-c-card-body-spacing-inline-start: 0.75rem;
+  --slds-c-card-body-spacing-inline-end: 0.75rem;
+  box-shadow: 0 0 0.3rem lightgrey;
+}
+:host lightning-icon.external-action-tester-icon {
+  position: absolute;
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0.2rem gray;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+:host div.external-action-tester-title {
+  width: 350px;
+  height: 75px;
+  background-color: rgba(200, 200, 215, 0.2);
+  border-radius: 0.75rem 0.75rem 0 0;
+  padding-top: 40px;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+  text-transform: uppercase;
+  color: rgba(170, 170, 170, 1);
+  font-size: 0.8em;
+}
+:host div.external-action-tester-body {
+  padding: 0 15px;
+  color: #5876a3;
+}
+:host svg {
+  padding: 20px 0;
+}
+:host div.slds-text-longform {
+  padding-bottom: 5px;
+}

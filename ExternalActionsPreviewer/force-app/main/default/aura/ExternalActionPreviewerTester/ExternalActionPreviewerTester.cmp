@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="PreviewerTesterController">
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+    <lightning:card variant="narrow" class="slds-p-around_medium">
+        <div>
+            <pi_ea_utils:externalActionTester />
+        </div>
+    </lightning:card>
+</aura:component>
