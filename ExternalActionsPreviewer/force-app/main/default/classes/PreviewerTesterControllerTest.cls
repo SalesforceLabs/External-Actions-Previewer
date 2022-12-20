@@ -42,7 +42,7 @@ private class PreviewerTesterControllerTest {
 
     }
     
-        @isTest
+    @isTest
     static void testThrownException() {
         Test.setMock(HttpCalloutMock.class, new PreviewerTesterControllerMock());
 
