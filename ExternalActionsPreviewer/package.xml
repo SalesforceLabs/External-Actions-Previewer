@@ -54,6 +54,10 @@
 		<name>NamedCredential</name>
 	</types>
 	<types>
+		<members>ExternalActionsPreviewerEC</members>
+		<name>ExternalCredential</name>
+	</types>
+	<types>
 		<members>codeMirror</members>
 		<name>StaticResource</name>
 	</types>
