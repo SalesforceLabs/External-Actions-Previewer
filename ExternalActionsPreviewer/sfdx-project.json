@@ -10,7 +10,7 @@
     ],
     "name": "ExternalActionsPreviewer",
     "namespace": "pi_ea_utils",
-    "sfdcLoginUrl": "https://accountengagement-dev-ed.develop.lightning.force.com/",
+    "sfdcLoginUrl": "http://ddn000005lewoma4-dev-ed.develop.my.salesforce.com/",
     "sourceApiVersion": "56.0",
     "packageAliases": {
         "External Actions Previewer App": "0HoDo000000blqQKAQ"
