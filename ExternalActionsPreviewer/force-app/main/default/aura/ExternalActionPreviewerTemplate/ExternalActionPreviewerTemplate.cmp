@@ -1,6 +1,6 @@
-<aura:component implements="lightning:appHomeTemplate" description="Two custom regions">
-    <aura:attribute name="left" type="Aura.Component[]" />
-    <aura:attribute name="right" type="Aura.Component[]" />
+<aura:component implements="lightning:appHomeTemplate" access="global" description="Two custom regions">
+    <aura:attribute name="left" access="global" type="Aura.Component[]" />
+    <aura:attribute name="right" access="global" type="Aura.Component[]" />
 
     <div>
         <lightning:layout>
