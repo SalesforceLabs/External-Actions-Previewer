@@ -24,7 +24,7 @@ public with sharing class PreviewerTesterController {
         List<Map<String, String>> inputParams,
         String actionSelector) {
         HttpRequest req = new HttpRequest();
-        String baseUrl = 'callout:ExternalActionsPreviewerNC';
+        String baseUrl = 'callout:pi_ea_utils__ExternalActionsPreviewerNC';
         String endpoint;
         if (isStandard) {
             endpoint = baseUrl + '/actions/standard/' + type;

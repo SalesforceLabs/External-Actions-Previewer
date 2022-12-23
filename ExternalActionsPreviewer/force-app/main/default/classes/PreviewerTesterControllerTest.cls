@@ -41,7 +41,7 @@ private class PreviewerTesterControllerTest {
         System.assertEquals('Success', res);
 
     }
-    
+
     @isTest
     static void testThrownException() {
         Test.setMock(HttpCalloutMock.class, new PreviewerTesterControllerMock());
