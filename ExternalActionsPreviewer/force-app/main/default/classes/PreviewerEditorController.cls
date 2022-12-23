@@ -16,7 +16,7 @@ public with sharing class PreviewerEditorController {
 
     private static HttpRequest createHttpRequest(Id marketingAppExtActionId, String actionSchema) {
         HttpRequest req = new HttpRequest();
-        String baseUrl = 'callout:ExternalActionsPreviewerNC';
+        String baseUrl = 'callout:pi_ea_utils__ExternalActionsPreviewerNC';
         String endpoint = baseUrl + '/tooling/sobjects/MarketingAppExtAction/' + marketingAppExtActionId;
         String body = '{"ActionSchema":' + actionSchema + '}';
 

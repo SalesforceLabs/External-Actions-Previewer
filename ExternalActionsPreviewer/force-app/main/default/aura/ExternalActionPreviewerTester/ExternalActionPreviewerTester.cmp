@@ -2,9 +2,9 @@
 
     <aura:handler name="init" value="{!this}" action="{!c.init}" />
 
-    <lightning:card variant="narrow" class="slds-p-around_medium">
+    <lightning:card variant="narrow" class="slds-var-p-around_medium">
         <div>
-            <pi_ea_utils:externalActionTester />
+            <c:externalActionTester />
         </div>
     </lightning:card>
 </aura:component>
