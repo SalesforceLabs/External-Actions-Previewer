@@ -1,0 +1,22 @@
+<aura:component
+  implements="flexipage:availableForAllPageTypes"
+  access="global"
+  controller="PreviewerEditorController"
+>
+  <aura:handler name="init" value="{!this}" action="{!c.init}" />
+  <aura:handler
+    event="aura:applicationEvent"
+    action="{!c.handleRecordChange}"
+  />
+
+  <aura:attribute name="recordChangeDatetime" type="DateTime" />
+
+  <lightning:card variant="narrow" class="slds-var-p-around_medium">
+    <div>
+      <c:externalActionEditor
+        recordChangeDatetime="{!v.recordChangeDatetime}"
+        onschemachange="{!c.handleSchemaSave}"
+      />
+    </div>
+  </lightning:card>
+</aura:component>

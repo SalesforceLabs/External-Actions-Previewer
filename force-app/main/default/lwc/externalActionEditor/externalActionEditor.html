@@ -1,0 +1,30 @@
+<template>
+  <lightning-card title="Editor" icon-name="utility:edit">
+    <lightning-button
+      icon-name="utility:insert_tag_field"
+      slot="actions"
+      label="Format"
+      title="Format"
+      onclick={handleFormatButton}
+      class="slds-m-right_xx-small"
+      disabled={buttonsDisabled}
+    >
+    </lightning-button>
+    <lightning-button
+      icon-name="utility:download"
+      slot="actions"
+      label="Save"
+      title="Save"
+      variant="brand"
+      onclick={handleSaveButton}
+      disabled={saveDisabled}
+    >
+    </lightning-button>
+    <section class={showEditor}>
+      <textarea
+        lwc:dom="manual"
+        class="codemirror-container slds-m-left_small slds-m-top_xx-small"
+      ></textarea>
+    </section>
+  </lightning-card>
+</template>
