@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>ExternalActionPreviewerSelector</componentName>
+                <identifier
+        >pi_ea_utils_ExternalActionPreviewerSelector</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>ExternalActionPreviewerEditor</componentName>
+                <identifier
+        >pi_ea_utils_ExternalActionPreviewerEditor</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>left</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>ExternalActionPreviewerTester</componentName>
+                <identifier
+        >pi_ea_utils_ExternalActionPreviewerTester</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>ExternalActionPreviewerLogger</componentName>
+                <identifier
+        >pi_ea_utils_ExternalActionPreviewerLogger</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>right</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>External Actions Previewer</masterLabel>
+    <template>
+        <name>ExternalActionPreviewerTemplate</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

@@ -1,0 +1,17 @@
+<aura:component
+  implements="lightning:appHomeTemplate"
+  access="global"
+  description="Two custom regions"
+>
+  <aura:attribute name="left" access="global" type="Aura.Component[]" />
+  <aura:attribute name="right" access="global" type="Aura.Component[]" />
+
+  <div>
+    <lightning:layout>
+      <lightning:layoutItem flexibility="grow" class="slds-m-right_small">
+        {!v.left}
+      </lightning:layoutItem>
+      <lightning:layoutItem size="4"> {!v.right} </lightning:layoutItem>
+    </lightning:layout>
+  </div>
+</aura:component>

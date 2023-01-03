@@ -1,18 +1,18 @@
-# External Actions Previewer
-A utility tool that allows developer admins to easily author External Actions. It provides a set of tools that allows selection, editing, previewing and testing of External Actions:
+# Salesforce DX Project: Next Steps
 
-* **Selector** - Find for your External Actions with type-ahead search
-* **Editor** - Validates JSON with error highlighting
-* **Previewer** - Previews your External Action as it would appear in Engagement Studio
-* **Tester** - Tests your External Action using specified values for inputs and provides a log of the result
+Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-> Note that the External Action is executed in the context of the *current user*
+## How Do You Plan to Deploy Your Changes?
 
-## Installing the app on a Scratch Org
-Coming soon
+Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Installing the app on an Org
-Coming soon
+## Configure Your Salesforce DX Project
 
-## Contributing
-Coming soon
+The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+
+## Read All About It
+
+- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
+- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
+- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
