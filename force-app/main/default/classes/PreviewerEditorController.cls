@@ -20,7 +20,6 @@ public with sharing class PreviewerEditorController {
         String endpoint = baseUrl + '/tooling/sobjects/MarketingAppExtAction/' + marketingAppExtActionId;
         String body = '{"ActionSchema":' + actionSchema + '}';
 
-        req.setHeader('Authorization', 'Bearer ' + UserInfo.getSessionID());
         req.setHeader('Content-Type', 'application/json');
         req.setEndpoint(endpoint);
         req.setBody(body);
