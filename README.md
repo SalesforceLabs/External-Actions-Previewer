@@ -18,3 +18,6 @@ For instructions on how to use the App, please refer to https://quip.com/TazJAy6
 
 ## Contributing
 Please refer to [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md).
+
+## License
+Please refer to [LICENSE](LICENSE).
