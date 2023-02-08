@@ -17,4 +17,4 @@ For instructions on how to install the App on an org, please refer to https://qu
 For instructions on how to use the App, please refer to https://quip.com/TazJAy6qac9B
 
 ## Contributing
-Coming soon
+Please refer to [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md).
